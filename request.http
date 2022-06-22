@@ -1,0 +1,35 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caneta",
+    "price": "1"
+}
+
+### ADD PRODUCT
+
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Lápis",
+    "price": "2"
+}
+
+### LIST ALL PRODUCTS
+
+GET  http://localhost:4002/products
+
+### LIST ONE PRODUCT
+
+GET  http://localhost:4002/products/dab5e7da-5c4c-4548-af4d-ef1d07144272
+
+### EDIT ONE PRODUCT
+
+PUT http://localhost:4002/products/dab5e7da-5c4c-4548-af4d-ef1d07144272
+content-type: application/json
+
+{
+    "name": "Caneta maluca",
+    "price": "2"
+}
